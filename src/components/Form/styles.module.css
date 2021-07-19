@@ -1,0 +1,83 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+  border: 2px solid #b030b0;
+  border-radius: .5rem;
+  background-color: #f7ede2;
+  color: #22272e;
+  width: 450px;
+  height: 475px;
+}
+
+.formContainer h2 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.inputField label {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.inputField input {
+  padding: 1rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  border: 1px solid #C4C4C4;
+  outline: none;
+}
+
+.btnSend {
+  width: 10rem;
+  height: 3.125rem;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: .5rem;
+  background-color: #f77f00;
+  color: #fff;
+  border: 0px;
+  cursor: pointer;
+}
+
+.btnSend:hover {
+  background-color: #ff921d;
+}
+
+@media (max-width: 1060px) {
+  .formContainer {
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .formContainer {
+    width: 350px;
+    height: 393px;
+  }
+  .formContainer h2 {
+    margin-top: 1rem;
+    margin-bottom: -0.4rem;
+    font-size: 1.8rem;
+  }
+  .inputField input {
+    width: 15rem;
+  }
+  .btnSend {
+    margin: 1rem 0;
+  }
+}
