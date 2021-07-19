@@ -1,4 +1,4 @@
-#HC Landing
+# HC Landing
 
 O HC Landing é uma landing-page para cadastro de leads. Projeto criado como estudo desenvolvido no programa [Hiring Coders](https://www.hiringcoders.com.br/), possibilitado pela VTEX e Gama Academy.
 
