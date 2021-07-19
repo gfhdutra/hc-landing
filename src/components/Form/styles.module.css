@@ -81,3 +81,22 @@
     margin: 1rem 0;
   }
 }
+
+@media (max-width: 450px) {
+  .formContainer {
+    width: 250px;
+  }
+  .formContainer h2 {
+    margin-bottom: 0rem;
+    font-size: 1.7rem;
+  }
+  .inputField {
+    margin: 0.5rem 0;
+  }
+  .inputField input {
+    width: 12rem;
+  }
+  .btnSend {
+    margin: 1.3rem 0;
+  }
+}
