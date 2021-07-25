@@ -1,0 +1,89 @@
+.heroSection {
+  min-height: calc(100vh - 9rem);
+  /* min-height: 50vh; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.heroContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40rem;
+  height: 26.25rem;
+  text-align: left;
+  padding-right: 3rem;
+  color: #22272e;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.15;
+  /* padding: 1.5rem 0; */
+}
+
+.description {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+
+@media (max-width: 1060px) {
+  .heroContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0;
+  }
+  .text {
+    text-align: center;
+    padding: 0;
+    width: 80%;
+    height: auto;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+  .form {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .title {
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+  }
+  .description {
+    font-size: 1.3rem;
+    margin-bottom: -2rem;
+  }
+}

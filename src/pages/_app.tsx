@@ -1,10 +1,8 @@
-import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import type { AppProps } from 'next/app'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -12,11 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <Component {...pageProps} />
-      <Footer />
     </>
   )
 }
-
-export default MyApp

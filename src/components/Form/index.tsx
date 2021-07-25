@@ -31,14 +31,26 @@ export default function Form() {
 
   return (
     <form className={styles.formContainer} onSubmit={handleForm} >
-      <h2>Cadastro</h2>
+      <h2>Formulário de Cadastro</h2>
       <div className={styles.inputField}>
         <label htmlFor="name">Nome</label>
-        <input type="text" id="name" placeholder="Nome Completo" value={name} required onChange={(e) => setName(e.target.value)}/>
+        <input 
+        type="text" 
+        id="name" 
+        placeholder="Nome Completo" 
+        value={name} 
+        required 
+        onChange={(e) => setName(e.target.value)}/>
       </div>
       <div className={styles.inputField}>
         <label htmlFor="email">E-mail</label>
-        <input type="email" id="email" placeholder="E-mail" value={email} required onChange={(e) => setEmail(e.target.value)} />
+        <input 
+        type="email" 
+        id="email" 
+        placeholder="E-mail" 
+        value={email} 
+        required 
+        onChange={(e) => setEmail(e.target.value)} />
       </div>
       <button className={styles.btnSend}>ENVIAR</button>
     </form>
